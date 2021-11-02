@@ -40,7 +40,7 @@ function mouseDownEvent(e) {
     canDraw = true ;
     mouseX = e.pageX - screen.offsetLeft ;
     mouseY = e.pageY - screen.offsetTop ;
-    
+    tamanhoRisco ();
 };
 
 function mouseMoveEvent(e) {
@@ -61,7 +61,7 @@ function tamanhoRisco () {
     let valor =large ;
    
     
-    if (ctx.lineWidth >= 0 || ctx.lineWidth <= 100) {
+    if (ctx.lineWidth >= 0 ) {
         ctx.lineWidth = valor;
     }
 };
